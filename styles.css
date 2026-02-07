@@ -147,6 +147,8 @@ h2 {
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 1.1em;
+    direction: ltr;
+    text-align: left;
 }
 
 .option:hover {

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מבחן במתמטיקה - הרחבת עולם המספרים</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>מבחן במתמטיקה</h1>
+            <h2>מבחן מקיף - 4 יחידות</h2>
+            <p class="subtitle">100 שאלות: יחידה 2 (מספרים על הציר) • יחידה 3 (כפל וחילוק) • יחידה 5 (שטח משולש) • יחידה 6 (חיבור וחיסור)</p>
+        </header>
+
+        <div class="exam-info">
+            <p><strong>שם התלמיד/ה:</strong> _________________</p>
+            <p><strong>כיתה:</strong> _________________</p>
+            <p><strong>תאריך:</strong> _________________</p>
+        </div>
+
+        <div id="quiz-container">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+                <div class="progress-text" id="progress-text">שאלה 1 מתוך 100</div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-number" id="question-number"></div>
+                <div class="question-text" id="question-text"></div>
+                <div class="options" id="options"></div>
+                <div class="button-container">
+                    <button class="btn btn-skip" id="skip-btn" onclick="skipQuestion()">דלג</button>
+                    <button class="btn" id="next-btn" onclick="nextQuestion()">שאלה הבאה</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="results-container" style="display: none;">
+            <h2>תוצאות המבחן</h2>
+            <div class="score-display">
+                <div class="score-circle">
+                    <span id="final-score"></span>
+                </div>
+            </div>
+            <div id="results-details"></div>
+            <button class="btn" onclick="restartQuiz()">התחל מחדש</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
